@@ -1,0 +1,180 @@
+:root {
+  --background-white: #ffffff;
+  --black: #202124;
+  --dull-black: #494949;
+  --red: #e4002b;
+  --border-gray: #e3e3e3;
+  --card-background: #f8f7f5;
+  /* fonts  */
+  --small-font: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+
+body {
+  background-color: var(--background-white);
+}
+
+
+.header-section .location {
+  padding: 9px 0;
+  /* height: 50px; */
+}
+
+.location-info {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  padding: 9px 0;
+  p {
+    color: var(--black);
+    font-size: 0.8rem;
+    padding-top: 10px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  p i {
+    color: var(--red);
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 12px 14px;
+    border-radius: 10rem;
+    background-color: var(--black);
+    color: var(--background-white);
+    border: 1px solid var(--dull-black);
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+}
+
+.navbar {
+  padding: 18px 0;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+.navbar .navbar-links {
+  padding: 0 7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .navbar-links .main-navigations {
+  display: flex;
+  gap: 43px;
+  ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    gap: 43px;
+    li {
+      cursor: pointer;
+      font-size: var(--small-font);
+      font-weight: 600;
+    }
+  }
+}
+
+.main-navigations .logo {
+  margin: auto;
+  cursor: pointer;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.navbar .go-to-links {
+  display: flex;
+}
+
+.navbar .go-to-links .user {
+  display: flex;
+  border-right: 1px solid #e3e3e3;
+  padding: 5% 15px;
+  gap: 16px;
+  .account {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 1.3rem;
+    img{
+      width: 100%;
+    }
+  }
+  p {
+    cursor: pointer;
+    margin: auto;
+    font-size: var(--small-font);
+    font-weight: 700;
+  }
+}
+
+.navbar .go-to-links .bucket {
+  border-left: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  p {
+    font-size: var(--small-font);
+    font-weight: 500;
+    margin: auto;
+  }
+
+  .bucket-image {
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    img {
+      height: 100%;
+    }
+    .count {
+      position: absolute;
+      left: 22px;
+      top: 18px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}
+
+/* hero section  */
+.hero-section .ordr-ribbon {
+  padding: 14px 0;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+}
+.hero-section .ordr-ribbon .ribbon-content {
+  display: flex;
+  gap: 18px;
+  p {
+    color: var(--background-white);
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  button {
+    background-color: var(--red);
+    color: var(--background-white);
+    min-width: 10.3rem;
+    height: 2.75rem;
+    border-radius: 1.4rem;
+    border: none;
+    outline: none;
+  }
+}
+
+.hero-section .kfc-banner{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
