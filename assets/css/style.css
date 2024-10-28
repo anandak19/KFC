@@ -5,15 +5,16 @@
   --red: #e4002b;
   --border-gray: #e3e3e3;
   --card-background: #f8f7f5;
-  /* fonts  */
+  --common-margin: 14vw;
   --small-font: 14px;
+  --font-family: font-family: "Fjalla One", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid; */
+  /* border: 1px dotted grey; */
 }
 
 body {
@@ -158,7 +159,8 @@ body {
   p {
     color: var(--background-white);
     margin: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    font-family: var(--font-family);
   }
 
   button {
@@ -178,3 +180,178 @@ body {
     width: 100%;
   }
 }
+
+/* categories-section start  */
+.categories-section{
+  margin: 0 var(--common-margin);
+}
+
+.categories-secion-title{
+  margin: 100px 0 55px 0;
+  display: flex;
+  h1{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--black);
+    font-family: var(--font-family);
+    font-weight: 800;
+    text-wrap: nowrap;
+    margin-right: 31px;
+  }
+  .horizontal-line{
+    width: 100%;
+    border: none;
+    border-top: 2px solid var(--border-gray);
+    margin: auto;
+  }
+}
+
+.menu-cards-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.menu-cards-wrapper .menu-card{
+  width: 17.5vw;
+  height: 17.5vw;
+  margin: 1%;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--card-background);
+  overflow: hidden;
+
+  .menu-image{
+    width: 100%;
+    height: 12.96296vw;
+    /* background-color: aquamarine; */
+    img{
+      width: 100%;
+      height: 12.96296vw;
+      object-fit: cover;
+    }
+  }
+
+  .menu-text{
+    display: flex;
+    margin: 32px auto;
+    h3{
+      width: 100%;
+      font-size: 1.11rem;
+      text-align: center;
+      font-family: var(--font-family);
+      font-weight: 800;
+    }
+  }
+}
+
+.menu-cards-wrapper .more-menu-card{
+  .menu-image{
+    padding: 8px 26px;
+    img{
+      object-fit: contain;
+    }
+  }
+
+  .menu-text{
+    gap: 18px;
+    margin: 32px 0;
+    padding: 0 71px;
+    h3{
+      width: fit-content;
+      font-weight: 700;
+    }
+    img{
+      width: 50px;
+    }
+  }
+}
+
+/* categories-section end  */
+/* offers section start  */
+.offers-section{
+  background-color: var(--black);
+  margin: 16vh 0;
+  padding: 0 18vw;
+}
+
+.three-lines{
+  display: flex;
+  gap: 24px;
+  .line{
+    background-color: var(--red);
+    width: 23px;
+    height: 61px;
+  }
+}
+
+.section-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12vh 0;
+  .title{
+    h1{
+      color: var(--background-white);
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}
+
+.section-title .view-more-link{
+  display: flex;
+  margin: auto 0; 
+  a{
+    text-decoration: none;
+    color: var(--background-white);
+    font-size: 1.3rem;
+    margin: auto;
+  }
+  .arrow{
+    width: 40px;
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.cards-slider{
+  display: flex;
+  overflow-x: scroll;
+  gap: 18px;
+}
+
+.cards-slider .offer-card{
+  height: 398px;
+  width: 310px;
+  background-color: var(--card-background);
+  .offer-image{
+    height: 59%;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .offer-details{
+    padding: 18px;
+    overflow: hidden;
+    .details{
+      text-align: center;
+      overflow: hidden;
+      h1{
+
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+/* offers section end  */    
