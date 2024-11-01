@@ -1,4 +1,5 @@
 :root {
+  font-size: 16px;
   --background-white: #ffffff;
   --black: #202124;
   --dull-black: #494949;
@@ -6,7 +7,7 @@
   --border-gray: #e3e3e3;
   --card-background: #f8f7f5;
   --common-margin: 14vw;
-  --small-font: 14px;
+  --small-font: 0.8rem;
   --font-family:"Oswald", sans-serif;
   --normal-font:"Poppins", serif;
 }
@@ -25,7 +26,6 @@ body {
 
 .header-section .location {
   padding: 9px 0;
-  /* height: 50px; */
 }
 
 .location-info {
@@ -143,7 +143,7 @@ body {
       position: absolute;
       left: 22px;
       top: 18px;
-      font-size: 12px;
+      font-size: var(--small-font);
       font-weight: 600;
     }
   }
