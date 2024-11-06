@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px dotted grey; */
 }
 
 body {
@@ -27,15 +26,15 @@ body::-webkit-scrollbar {
 }
 /* header  */
 .header-section {
-  /* position: fixed;
+  position: fixed;
   left: 0;
   right: 0;
-  top: 0; */
+  top: 0;
   background-color: var(--background-white);
 }
 /* main body container  */
 .container {
-  margin-top: 157px;
+  margin-top: 140px;
 }
 
 /* header section styles   */
@@ -46,8 +45,8 @@ body::-webkit-scrollbar {
 .location-info {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 23px;
-  padding: 9px 0;
   p {
     margin: auto 0;
     color: var(--black);
@@ -123,7 +122,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    width: 1.3rem;
+    width: 1.9rem;
     img {
       width: 100%;
     }
@@ -158,8 +157,8 @@ body::-webkit-scrollbar {
       position: absolute;
       left: 22px;
       top: 18px;
-      font-size: var(--small-font);
-      font-weight: 600;
+      font-size: 1.1rem;
+      font-weight: 700;
     }
   }
 }
@@ -190,17 +189,23 @@ body::-webkit-scrollbar {
     min-width: 16.3rem;
     height: 4.75rem;
     border-radius: 5rem;
+    cursor: pointer;
     border: none;
     outline: none;
+    &:hover{
+      background-color: #c70226;
+    }
   }
 }
 
+/* hero section start  */
 .hero-section .kfc-banner {
   width: 100%;
   img {
     width: 100%;
   }
 }
+/* hero section end  */
 
 /* categories-section start  */
 .categories-section {
@@ -303,7 +308,6 @@ body::-webkit-scrollbar {
 .offers-section {
   background-color: var(--black);
   margin-top: 16vh;
-  /* padding: 0 16.5rem 15vw 14vw; */
   padding: 0 0 7vw 14vw;
 }
 
@@ -360,8 +364,7 @@ body::-webkit-scrollbar {
   grid-auto-flow: column;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  gap: 18px;
-  /* margin: 0 14vw; */
+  gap: 2.9rem;
   padding: 0 18px 94px 0;
 }
 
@@ -377,7 +380,6 @@ body::-webkit-scrollbar {
 .cards-slider .offer-card {
   height: 41rem;
   width: 32rem;
-  /* min-width: 397px; */
   overflow: hidden;
   border-radius: 8px;
   background-color: var(--card-background);
@@ -390,7 +392,7 @@ body::-webkit-scrollbar {
     }
   }
   .offer-details {
-    padding: 4px 24px;
+    padding: 4px 24px 6px 24px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -479,6 +481,7 @@ body::-webkit-scrollbar {
 }
 
 .footer-row-one .brand-image {
+  cursor: pointer;
   img {
     width: 100%;
   }
