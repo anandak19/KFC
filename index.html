@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bootsrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootsrap/css/bootstrap.css" />
     <title>KFC</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="shortcut icon" href="/assets/icons/kfc-logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/kfc-logo.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -33,8 +37,11 @@
         </div>
       </div>
       <!-- navbar  -->
-      <nav class="navbar">
+      <nav class="kfc-navbar">
         <div class="navbar-links">
+          <div class="menu-icon-container">
+            <img src="./assets/icons/MenuIcon.svg" alt="" />
+          </div>
           <div class="main-navigations">
             <div class="logo">
               <img src="./assets/icons/kfcLogo.492728c6.svg" alt="" />
@@ -61,10 +68,107 @@
           </div>
         </div>
       </nav>
+
+      <!-- side-more-nav  -->
+      <div class="more-nav-phone">
+        <div class="more-nav-header">
+          <div class="menu-close-icon">
+            <img src="./assets/icons/menu-close.svg" alt="">
+          </div>
+          <div class="kfc-lines">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="42"
+            viewBox="0 0 82 42"
+            fill="none"
+            class="injected-svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect
+              x="0"
+              y="0"
+              width="16.4103"
+              height="41.0256"
+              fill="#E4002B"
+            ></rect>
+            <rect
+              x="32.4103"
+              y="0"
+              width="16.4103"
+              height="41.0256"
+              fill="#E4002B"
+            ></rect>
+            <rect
+              x="64.8206"
+              y="0"
+              width="16.4103"
+              height="41.0256"
+              fill="#E4002B"
+            ></rect>
+          </svg>
+          </div>
+          <div class="bucket">
+            <div class="bucket-image">
+              <img src="./assets/icons/bucket_cart_icon.svg" alt="">
+              <span class="count">0</span>
+            </div>
+          </div>
+        </div>
+        <div class="more-nav-title">
+          <div class="title-text">lets get<br>cookin'</div>
+        </div>
+        <div class="user-actions">
+          <div class="user-icon">
+            <img src="./assets/icons/Account_Icon.svg" alt="">
+          </div>
+          <div class="signin-up-text">Sign in / Sign up</div>
+          <div class="arrow"><img src="./assets/images/black_right_arrow.a801582c.svg" alt=""></div>
+        </div>
+
+        <div class="container-fluid more-menu-items">
+          <div class="row mb-5">
+            <div class="header-card d-flex justify-content-between">
+              <div class="card-title">
+                Menu
+              </div>
+              <div class="card-image">
+                <img src="./assets/images/menu-cover.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="header-card d-flex justify-content-between">
+              <div class="card-title">
+                Deals
+              </div>
+              <div class="card-image">
+                <img src="./assets/images/delas-cover.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="header-card">
+              <div class="col py-5">
+                <div class="small-title">Get Help</div>
+              </div>
+              <div class="col py-5">
+                <div class="small-title">Contact Us</div>
+              </div>
+              <div class="col py-5">
+                <div class="small-title">KFC Feedback</div>
+              </div>
+              <div class="col py-5">
+                <div class="small-title">Privacy Policy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- header section end  -->
 
-    <main class="container">
+    <main class="container-fluid p-0">
       <!-- hero section start  -->
       <section class="hero-section">
         <div class="ordr-ribbon">
@@ -74,7 +178,13 @@
           </div>
         </div>
         <div class="kfc-banner">
-          <img src="./assets/images/hero-banner.webp" alt="" />
+          <picture>
+            <source
+              media="(max-width:992px)"
+              srcset="./assets/images/hero-mobile-banner.webp"
+            />
+            <img src="./assets/images/hero-banner.webp" alt="KFC Banner" />
+          </picture>
         </div>
       </section>
       <!-- hero section end  -->
@@ -87,83 +197,91 @@
             <hr class="horizontal-line" />
           </div>
           <!-- menu  -->
-          <div class="menu-cards-wrapper">
-            <div class="menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/menu-1.jpg" alt="" />
+          <div class="container px-2">
+            <div class="row gx-5 gy-5">
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/menu-1.jpg" alt="Card image cap" loading = "lazy"  />
+                  <div class="card-body">
+                    <p class="card-text">INTERNATIONAL BURGER FEST</p>
+                  </div>
+                </div>
               </div>
-              <div class="menu-text">
-                <p>INTERNATIONAL BURGER FEST</p>
+
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/menu-2.jpg" alt="Card image cap" loading = "lazy" />
+                  <div class="card-body">
+                    <p class="card-text">MATCH DAY COMBOS
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/menu-3.jpg" alt="Card image cap" loading = "lazy" />
+                  <div class="card-body">
+                    <p class="card-text">VALUE LUNCH SPECIALS
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/menu-4.jpg" alt="Card image cap" loading = "lazy" />
+                  <div class="card-body">
+                    <p class="card-text">BOX MEALS
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/menu-2.jpg" alt="" />
+            <div class="row gx-5 gy-5 menu-row-two">
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/menu-5.jpg" alt="Card image cap" loading = "lazy" />
+                  <div class="card-body">
+                    <p class="card-text">BURGERS
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="menu-text">
-                <p>MATCH DAY COMBOS</p>
-              </div>
-            </div>
 
-            <div class="menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/menu-3.jpg" alt="" />
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/menu-6.jpg" alt="Card image cap" loading = "lazy" />
+                  <div class="card-body">
+                    <p class="card-text">CHICKEN BUCKETS
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="menu-text">
-                <p>VALUE LUNCH SPECIALS</p>
-              </div>
-            </div>
 
-            <div class="menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/menu-4.jpg" alt="" />
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/menu-7.jpg" alt="Card image cap" loading = "lazy" />
+                  <div class="card-body">
+                    <p class="card-text">RICE BOWLZ
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="menu-text">
-                <p>BOX MEALS</p>
-              </div>
-            </div>
 
-            <div class="menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/menu-5.jpg" alt="" />
-              </div>
-              <div class="menu-text">
-                <p>BURGERS</p>
-              </div>
-            </div>
-
-            <div class="menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/menu-6.jpg" alt="" />
-              </div>
-              <div class="menu-text">
-                <p>CHICKEN BUCKETS</p>
-              </div>
-            </div>
-
-            <div class="menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/menu-7.jpg" alt="" />
-              </div>
-              <div class="menu-text">
-                <p>RICE BOWLZ</p>
-              </div>
-            </div>
-
-            <div class="menu-card more-menu-card">
-              <div class="menu-image">
-                <img src="./assets/images/finger_lickin.svg" alt="" />
-              </div>
-              <div class="menu-text">
-                <p>View All Menu</p>
-                <img
-                  src="./assets/images/black_right_arrow.a801582c.svg"
-                  alt=""
-                />
+              <div class="col-6 col-sm-6 col-lg-6 col-xl-3">
+                <div class="card">
+                  <img class="card-img-top" src="/assets/images/finger_lickin.svg" alt="Card image cap" loading = "lazy" />
+                  <div class="card-body ">
+                    <p class="card-text view-all-menu">View All Menu <span class="ms-lg-4 ms-sm-2"><img src="./assets/icons/black-arrow.svg" alt=""></span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          
         </div>
       </section>
       <!-- categories-secion end  -->
@@ -252,7 +370,9 @@
                   user.
                 </h1>
                 <p>
-                  Add 2 Pc  Hot n Crispy Chicken at just Rs 99 on min cart value of Rs 499 or more. Applicable on 2nd & 3rd order for signed in user.
+                  Add 2 Pc Hot n Crispy Chicken at just Rs 99 on min cart value
+                  of Rs 499 or more. Applicable on 2nd & 3rd order for signed in
+                  user.
                 </p>
               </div>
               <div class="more-apply">
@@ -269,10 +389,12 @@
             <div class="offer-details">
               <div class="details">
                 <h1>
-                  Upto Rs 100 off on min cart value of Rs 699 or more . Applicable on 4th order onwards for signed in user.
+                  Upto Rs 100 off on min cart value of Rs 699 or more .
+                  Applicable on 4th order onwards for signed in user.
                 </h1>
                 <p>
-                  Upto Rs 100 off on min cart value of Rs 699 or more . Applicable on 4th order onwards for signed in user.
+                  Upto Rs 100 off on min cart value of Rs 699 or more .
+                  Applicable on 4th order onwards for signed in user.
                 </p>
               </div>
               <div class="more-apply">
@@ -288,12 +410,8 @@
             </div>
             <div class="offer-details">
               <div class="details">
-                <h1>
-                  Get flat Rs.75 off on a cart value of Rs.599 or above
-                </h1>
-                <p>
-                  Get flat Rs.75 off on a cart value of Rs.599 or above
-                </p>
+                <h1>Get flat Rs.75 off on a cart value of Rs.599 or above</h1>
+                <p>Get flat Rs.75 off on a cart value of Rs.599 or above</p>
               </div>
               <div class="more-apply">
                 <a href="">View Details</a>
@@ -309,10 +427,12 @@
             <div class="offer-details">
               <div class="details">
                 <h1>
-                  1 Pc free Veg Zinger on a cart value of Rs.499 or above on first order. Only for registered users
+                  1 Pc free Veg Zinger on a cart value of Rs.499 or above on
+                  first order. Only for registered users
                 </h1>
                 <p>
-                  1 Pc free Veg Zinger on a cart value of Rs.499 or above on first order. Only for registered users
+                  1 Pc free Veg Zinger on a cart value of Rs.499 or above on
+                  first order. Only for registered users
                 </p>
               </div>
               <div class="more-apply">
@@ -331,9 +451,7 @@
                 <h1>
                   Free Double chicken roll on a cart value of 999 or above.
                 </h1>
-                <p>
-                  Free Double chicken roll on a cart value of 999 or above.
-                </p>
+                <p>Free Double chicken roll on a cart value of 999 or above.</p>
               </div>
               <div class="more-apply">
                 <a href="">View Details</a>
@@ -348,12 +466,8 @@
             </div>
             <div class="offer-details">
               <div class="details">
-                <h1>
-                  Free Large Fries
-                </h1>
-                <p>
-                  Get Free Large Fries on a cart value of 299 or more.
-                </p>
+                <h1>Free Large Fries</h1>
+                <p>Get Free Large Fries on a cart value of 299 or more.</p>
               </div>
               <div class="more-apply">
                 <a href="">View Details</a>
@@ -368,9 +482,7 @@
             </div>
             <div class="offer-details">
               <div class="details">
-                <h1>
-                  Free 3pc Chicken Strips
-                </h1>
+                <h1>Free 3pc Chicken Strips</h1>
                 <p>
                   Free 3pc Strips on a cart value of 299 or more. Thursday only
                 </p>
@@ -388,12 +500,8 @@
             </div>
             <div class="offer-details">
               <div class="details">
-                <h1>
-                  50% OFF on all orders
-                </h1>
-                <p>
-                  Flat 125/- off
-                </p>
+                <h1>50% OFF on all orders</h1>
+                <p>Flat 125/- off</p>
               </div>
               <div class="more-apply">
                 <a href="">View Details</a>
@@ -405,7 +513,6 @@
       </section>
 
       <!-- offers section end  -->
-
     </main>
     <!-- footer start  -->
     <footer class="footer-section">
@@ -414,20 +521,32 @@
           <img src="./assets/images/KFC_Logo.svg" alt="">
         </div>
         <div class="footer-links-wrapper">
-          <!-- section  -->
           <div class="links-section">
-            <p>KFC India</p>
-            <ul>
-              <li>About KFC</li>
-              <li>KFC Care</li>
-              <li>Careers</li>
-              <li>Our Golden Past</li>
-              <li>Responsible Disclosure</li>
-            </ul>
+            <p class="toggle-button d-md-none" data-bs-toggle="collapse" data-bs-target="#kfcList" aria-expanded="false" aria-controls="kfcList">
+              KFC India
+            </p>
+            <p class="d-none d-md-block">
+              KFC India
+            </p>
+          
+            <!-- Collapsible content -->
+            <div id="kfcList" class="collapse d-md-block">
+              <ul>
+                <li>About KFC</li>
+                <li>KFC Care</li>
+                <li>Careers</li>
+                <li>Our Golden Past</li>
+                <li>Responsible Disclosure</li>
+              </ul>
+            </div>
           </div>
 
           <div class="links-section">
-            <p>Legal</p>
+            <p class="toggle-button d-md-none" data-bs-toggle="collapse" data-bs-target="#legalList" aria-expanded="false" aria-controls="legalList">Legal</p>
+            <p class="d-none d-md-block">
+              Legal
+            </p>
+            <div id="legalList" class="collapse d-md-block">
             <ul>
               <li>Terms and Conditions</li>
               <li>Privacy Policy </li>
@@ -435,9 +554,14 @@
               <li>Caution Notice</li>
             </ul>
           </div>
+          </div>
 
           <div class="links-section">
-            <p>KFC Food</p>
+            <p class="toggle-button d-md-none" data-bs-toggle="collapse" data-bs-target="#foodList" aria-expanded="false" aria-controls="foodList">KFC Food</p>
+            <p class="d-none d-md-block">
+              KFC Food
+            </p>
+            <div id="foodList" class="collapse d-md-block">
             <ul>
               <li>Menu</li>
               <li>Order Lookup</li>
@@ -445,15 +569,21 @@
               <li>Nutrition & Allergen</li>
             </ul>
           </div>
+          </div>
 
           <div class="links-section">
-            <p>Support</p>
+            <p class="toggle-button d-md-none" data-bs-toggle="collapse" data-bs-target="#supportList" aria-expanded="false" aria-controls="supportList">Support</p>
+            <p class="d-none d-md-block">
+              Support
+            </p>
+            <div id="supportList" class="collapse d-md-block">
             <ul>
               <li>Get Help</li>
               <li>Contact Us</li>
               <li>KFC Feedback</li>
               <li>Privacy Policy </li>
             </ul>
+          </div>
           </div>
         </div>
         <div class="location-tacker">
@@ -495,9 +625,11 @@
           </ul>
         </div>
       </div>
-     </footer>
+     </footer> 
+    
      <!-- footer end  -->
 
-     <script src="./bootsrap/js/bootstrap.js"></script>
+    <script src="./bootsrap/js/bootstrap.js"></script>
+    <script src="./assets/javascript/index.js"></script>
   </body>
 </html>
